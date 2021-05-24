@@ -21,6 +21,7 @@ ul li {
     height: 1086;
     width: 768px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.493);
+    background: rgb(225, 226, 230);
 }
 
 #header {
