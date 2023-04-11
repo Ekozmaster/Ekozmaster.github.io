@@ -1,128 +1,62 @@
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body style="background: #1b1b1b;">
-        <div id="page" class="flex-column jc-space-between">
-            <div id="header" class="flex-row jc-space-between">
-                <img id="profile-picture" src="me.jpg">
-                <div class="flex-column jc-space-between">
-                    <div id="resume-title">RESUME</div>
-                    <div>
-                        Emanuel Kozerski, 24yo.<br>
-                        Pato Branco, PR - Brazil
-                    </div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Kozerski</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="commons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="loading-page-container flex-row jc-center ai-center">
+        <div class="loading-page-bg-left"></div>
+        <div class="loading-page-bg-right"></div>
+        <div class="dots-tiled-grid-bg"></div>
 
-            <div style="padding: 1em; position: absolute; top: 10%; width: 100%;" class="flex-row jc-space-between">
-                <div>
-                    <div style="border: solid 1px black; padding: 0.2em 1em; display: inline-block">CONTACT</div>
-                    <div style="font-size: 12px">
-                        <div class="flex-row align-items-center">
-                            <img src="PhoneIcon.png" class="small-icon">
-                            +55 (46) 9 9137 - 1615
-                        </div>
-                        <div class="flex-row align-items-center">
-                            <img src="EmailIcon.png" class="small-icon">
-                            emanuelkoz.97@hotmail.com
-                        </div>
-                        <div class="flex-row align-items-center">
-                            <img src="linkedInIcon.png" class="small-icon">
-                            <a href="https://www.linkedin.com/in/emanuel-kozerski">https://www.linkedin.com/in/emanuel-kozerski</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-column align-items-end">
-                    <div style="border: solid 1px black; padding: 0.2em 1em; display: inline-block">PORTIFOLIO</div>
-                    <div style="font-size: 12px" class="flex-column align-items-end">
-                        <div class="flex-row align-items-center">
-                            <img src="ArtstationIcon.png" class="small-icon">
-                            <a href="https://www.artstation.com/emanuelkozerski">https://www.artstation.com/emanuelkozerski</a>
-                        </div>
-                        <div class="flex-row align-items-center">
-                            <img src="githubDarkIcon.png" class="small-icon">
-                            <a href="https://github.com/Ekozmaster">https://github.com/Ekozmaster</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- LOADER -->
+        
+        <div class="main-loader-bg flex-row jc-center ai-center">
+            <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: fixed">
+                <mask id="mask_main_loader_fill" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="260" height="260">
+                    <circle id="main_loader_fill_mask_circle" cx="130" cy="130" r="88" stroke="#D5D5D5" stroke-width="15" stroke-dasharray="552.920192" stroke-dashoffset="420" transform="rotate(-90 130 130)"/>
+                </mask>
 
-            <div id="texts-container" class="flex-column jc-space-between children-margin">
-                <div style="border: solid 1px black; padding: 0.2em 1em; display: inline-block; margin-top: 2em; background-color: rgb(37, 37, 37); color: white">ABOUT</div>
-                <div id="text-1" class="flex-row align-items-center" style="font-size: 12px;">
-                    <img class="texts-icons" src="joystick_icon.png">
-                    In essence, I'm a game development enthusiast. I've been messing with games since around 14yo, and with digital painting even younger, always trying to learn as much as I could about every single aspect of really, computer science in general, but with most emphasis on visual art and programming. I'm a big lover of emotional storytelling and whimsical cartoon stylization in movies and videogames, taking a lot of inspiration from titles like "Ori and the blind forest/Will of the wisps", "Journey", "Rayman", "Kung fu panda", "How to train your dragon", and alike.
-                </div>
-                <div id="relevant-work-experience">
-                    <div class="flex-row align-items-center">
-                        <img src="workXPIcon.png" class="small-icon">
-                        <h2>RELEVANT WORK XP</h2>
-                    </div>
-                    <div class="flex-row">
-                        <div style="width: 20%; height: 4px; background-color: rgb(0, 0, 0)"></div>
-                        <div style="width: 40%; height: 1.5px; background-color: rgb(126, 126, 126)"></div>
-                    </div>
-                    <ul>
-                        <li>
-                            <h4>InoBram Automações - Embedded Python development: 1.5 year</h4>
-                            Working on the engineering team, I had the opportunity to learn Python on a embedded system, Beaglebone Black. I worked on a product which was a aviary's ambience controller, a central intelligence responsible for managing fans, heaters, curtains, hoods and inlets, reading sensors and reacting accordingly. SMAAI-5 was it's name.
-                        </li>
-                        <li>
-                            <h4>Pixeldonym - My own pre-incubated game studio: 2 years.</h4>
-                            In 2017, at age of 20, I started a game studio company at my university's pre-incubator (was studying computer engineering at the time), and published my first mobile game: <a href="https://play.google.com/store/apps/details?id=com.pixeldonym.witcherspells">Witcher Spells</a>. It was a big experience of why you shouldn't use MVP strategy with games, but I learned a lot on the process, and a lot more since then, specially in entrepreneurship and digital painting for games.
-                        </li>
-                        <li>
-                            <h4>Softfocus - Fullstack developer: 2 year, so far.</h4>
-                            Currently working with web as fullstack developer, in multiple products, using mostly Django and Angular. Here I had the opportunity to work with an amazing organizational culture, amazing people, and learned a lot about web development, unit testing, TDD and much more.
-                        </li>
-                    </ul>
-                </div>
-                <div id="skills">
-                    <div class="flex-row align-items-center">
-                        <img src="skillsIcon.png" class="small-icon">
-                        <h2>SKILLS</h2>
-                    </div>
-                    <div class="flex-row">
-                        <div style="width: 40%; height: 4px; background-color: rgb(0, 0, 0)"></div>
-                        <div style="width: 20%; height: 1.5px; background-color: rgb(126, 126, 126)"></div>
-                    </div>
-                    <ul>
-                        <li>Unity game development.</li>
-                        <li>Programming on multiple languages (C, C++, C#, Python, Type/Javascript, Java, GLSL, HLSL, Lua).</li>
-                        <li>Other NON-PROGRAMMING languages (HTML, CSS, SCSS, etc.).</li>
-                        <li>Software versioning tools like git, GitHub, GitLab, BitBucket.</li>
-                        <li>TDD and Unit Testing.</li>
-                        <li>Agile development, Kanban (with capital "K") methodology, OKRs, Trello, Jira, etc.</li>
-                        <li>Graphics programming, materials, shaders, PBR, rendering paths and techniques, raymarching.</li>
-                        <li>Digital painting, illustration, concept art, technical art, game assets/art, etc.</li>
-                        <li>Projects/experiments using OpenGL/DirectX, X11, Win32 API, SDL, GLFW, SFML, etc.</li>
-                        <li>Machine learning and image processing (extracting useful data from pixel images).</li>
-                        <li>Web development frontend + backend (Fullstack), Django, Angular, Node, etc.</li>
-                        <li>Databases (postgresql and mysql).</li>
-                        <li>Blender 3D Modeling, animation, Cycles rendering, baking, etc., but very poor rigging skills.</li>
-                        <li>Very basic understanding of assembly/machine language, instructions, registers, clock cycles, SIMD, cache-friendly programming, etc.</li>
-                        <li>Good softskills, teamwork, enthusiasm and synergy.</li>
-                        <li>C2 (Proficient) english level <a href="https://www.efset.org/cert/E6vrmr">certificate</a> by EF Set.</li>
-                    </ul>
-                </div>
-            </div>
+                <g mask="url(#mask_main_loader_fill)">
+                    <circle cx="130" cy="130" r="90.5" stroke="#D5D5D5" stroke-width="4"/>
+                    <circle cx="130" cy="130" r="83.5" stroke="#D5D5D5" stroke-width="2" stroke-dasharray="2 8"/>
+                </g>
+            </svg>
+            <p class="flex-row" style="font-size: 1.28rem; color: white; font-weight: 200;">JUST A SEC...</p>
+        </div><!---->
 
-            <div style="font-size: 12px; margin-left: 1rem;">
-                Please, take a look at two of my best repos on GitHub: <a href="https://github.com/Ekozmaster/DwarfQuest">DwarfQuest</a> and <a href="https://github.com/Ekozmaster/python-experiments">Python Experiments</a>
+        <div class="loading-transition-stripes">
+            
+            <div class="loading-transition-stripe-left">
+                <div class="chrom-abbr-div" style="background-color: #FF3A3A; transform: translateX(-13px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #6EF11E; transform: translateX(-8px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #793AFF; transform: translateX(11px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #1E40F1; transform: translateX(5px)"></div>
             </div>
-
-            <div id="footer" class="flex-row jc-space-between align-items-center">
-                <div style="font-size: 12px; color: rgb(150, 150, 150)">
-                    <div style="display: inline; color: white; border: solid 1px white; border-radius: 5000px; padding: 3px;">#PlayApartTogether.</div>
-                </div>
-                <div class="flex-row jc-center">
-                    <a href="https://github.com/Ekozmaster" class="contact-link"><img class="contact-icons" src="githubIcon.png"></a>
-                    <a href="https://www.artstation.com/emanuelkozerski" class="contact-link"><img class="contact-icons" src="ArtstationIcon.png"></a>
-                    <a href="https://www.linkedin.com/in/emanuel-kozerski" class="contact-link"><img class="contact-icons" src="linkedInIcon.png"></a>
-                </div>
+            <div class="loading-transition-stripe-right">
+                <div class="chrom-abbr-div" style="background-color: #FF3A3A; transform: translateX(-13px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #6EF11E; transform: translateX(-8px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #793AFF; transform: translateX(11px)"></div>
+                <div class="chrom-abbr-div" style="background-color: #1E40F1; transform: translateX(5px)"></div>
+            </div>
+            <div class="loading-transition-stripe-left">
+                <div class="chrom-abbr-div" style="background-color: #D5D5D5"></div>
+            </div>
+            <div class="loading-transition-stripe-right">
+                <div class="chrom-abbr-div" style="background-color: #D5D5D5"></div>
             </div>
         </div>
-    </body>
+
+    </div>
+
+</body>
 </html>
