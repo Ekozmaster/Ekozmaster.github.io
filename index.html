@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emanuel Kozerski</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="commons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/commons.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div class="loading-page-container flex-row jc-center ai-center">
+    <!-- <img src="https://wallpapers.com/images/featured-full/8k-e16w8b36gngra7a4.jpg"
+        style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0;"> -->
+     <div id="loading-page-container" class="flex-row jc-center ai-center">
         <div class="loading-page-bg-left"></div>
         <div class="loading-page-bg-right"></div>
         <div class="dots-tiled-grid-bg"></div>
 
         <!-- LOADER -->
         
-        <div class="main-loader-bg flex-row jc-center ai-center">
+        <div id="main-loader-container" class="flex-row jc-center ai-center">
             <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: fixed">
                 <mask id="mask_main_loader_fill" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="260" height="260">
                     <circle id="main_loader_fill_mask_circle" cx="130" cy="130" r="88" stroke="#D5D5D5" stroke-width="15" stroke-dasharray="552.920192" stroke-dashoffset="420" transform="rotate(-90 130 130)"/>
@@ -34,7 +35,8 @@
             <p class="flex-row" style="font-size: 1.28rem; color: white; font-weight: 200;">JUST A SEC...</p>
         </div><!---->
 
-        <div class="loading-transition-stripes">
+        <!-- SLIDING STRIPES -->
+        <div id="loading-transition-stripes" style="display: none;">
             
             <div class="loading-transition-stripe-left">
                 <div class="chrom-abbr-div" style="background-color: #FF3A3A; transform: translateX(-13px)"></div>
@@ -57,6 +59,8 @@
         </div>
 
     </div>
+    <script src="index.js"></script>
 
+    
 </body>
 </html>
