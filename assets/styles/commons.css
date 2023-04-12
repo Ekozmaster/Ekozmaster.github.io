@@ -16,6 +16,10 @@
     justify-content: center;
 }
 
+.jc-stretch {
+    justify-content: stretch;
+}
+
 .ai-center {
     align-items: center;
 }

@@ -28,4 +28,4 @@ setTimeout(() => {
     if (loadedByTime && loadedByContent) {
         removeMainLoader();
     }
-}, 2000);
+}, 3000);

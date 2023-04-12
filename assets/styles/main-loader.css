@@ -89,7 +89,7 @@
     stroke-dashoffset: 552.920192;
     animation: main-loader-mask-fill 2s forwards;
     animation-timing-function: cubic-bezier(0.6, 0.0, 0.0, 1.0);
-
+    animation-delay: 1s;
 }
 
 @keyframes main-loader-mask-fill {
