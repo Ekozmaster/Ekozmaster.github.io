@@ -1,9 +1,5 @@
 #welcome-header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 26px 41px;
 }
 
 .red-dashed-text-container {

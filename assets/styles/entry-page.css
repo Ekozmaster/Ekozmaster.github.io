@@ -1,0 +1,123 @@
+
+#entry-page {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 26px 41px;
+}
+
+#entry-page-background-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#171717 0%, #253341 60%);
+    z-index: -1;
+}
+
+#entry-page-background-grid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/entry-page-baground-grid.svg");
+    opacity: 0.15;
+}
+
+#hi-three-columns-container {
+    left: 0;
+    height: 4000px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#earth-middle-column {
+    height: 50vh;
+    width: 33vw;
+}
+
+#earth-hologram-column {
+    background-image: url("/assets/images/earth-mock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+}
+
+#short-description {
+    width: 100%;
+    margin-top: 200vh;
+    height: 400px;
+    transition: margin-top 0.5s ease-in-out;
+    color: white;
+    padding: 20px;
+    font-family: 'Saira';
+}
+
+#entry-page-spacer {
+    width: 100%;
+    height: 400vh;
+}
+
+#hi-column {
+    width: 25%;
+    height: 500px;
+}
+
+#hi-container {
+    width: 100%;
+    position: relative;
+}
+
+#hi-hey-text {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: white;
+    font-weight: 700;
+    padding: 0 4vw;
+    font-size: 2vw;
+    height: 2vw;
+}
+
+#the-hi-text {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    color: white;
+    font-size: 20vw;
+    font-family: 'Montserrat';
+    text-shadow: -7px 0 #1E6BFF, 7px 0 #DE5000;
+}
+
+#hi-blinking-carret {
+    position: absolute;
+    background-color: white;
+    width: 0.5vw;
+    right: 1.5vw;
+    height: 90%;
+    top: 5%;
+    animation: hi-blinking-carret 1.2s infinite;
+}
+
+@keyframes hi-blinking-carret {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+#hi-stripes {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 30%);
+    width: 70%;
+    max-height:100%;
+}

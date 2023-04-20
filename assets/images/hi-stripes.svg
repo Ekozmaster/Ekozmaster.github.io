@@ -1,0 +1,28 @@
+<svg width="341" height="53" viewBox="0 0 341 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 43H341" stroke="#5E7E85" stroke-width="2" />
+    <path d="M1 51H341" stroke="white" stroke-width="4" />
+    <path d="M0.5 2.5H340.5" stroke="white" stroke-width="4" />
+    <path d="M1 10H341" stroke="#5E7E85" stroke-width="2" />
+    <mask id="mask0_82_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="14"
+        width="340" height="25">
+        <rect x="1" y="14" width="340" height="25" fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_82_3)">
+        <path d="M-0.5 41L12 -9H24.5L12 41H-0.5Z" fill="#5E7E85" />
+        <path d="M24.5 41L37 -9H49.5L37 41H24.5Z" fill="#5E7E85" />
+        <path d="M49.5 41L62 -9H74.5L62 41H49.5Z" fill="#5E7E85" />
+        <path d="M74.5 41L87 -9H99.5L87 41H74.5Z" fill="#5E7E85" />
+        <path d="M99.5 41L112 -9H124.5L112 41H99.5Z" fill="#5E7E85" />
+        <path d="M124.5 41L137 -9H149.5L137 41H124.5Z" fill="#5E7E85" />
+        <path d="M149.5 41L162 -9H174.5L162 41H149.5Z" fill="#5E7E85" />
+        <path d="M174.5 41L187 -9H199.5L187 41H174.5Z" fill="#5E7E85" />
+        <path d="M199.5 41L212 -9H224.5L212 41H199.5Z" fill="#5E7E85" />
+        <path d="M224.5 41L237 -9H249.5L237 41H224.5Z" fill="#5E7E85" />
+        <path d="M249.5 41L262 -9H274.5L262 41H249.5Z" fill="#5E7E85" />
+        <path d="M274.5 41L287 -9H299.5L287 41H274.5Z" fill="#5E7E85" />
+        <path d="M299.5 41L312 -9H324.5L312 41H299.5Z" fill="#5E7E85" />
+        <path d="M324.5 41L337 -9H349.5L337 41H324.5Z" fill="#5E7E85" />
+        <path d="M97 27H242" stroke="#222C36" stroke-width="12" stroke-linecap="round" />
+    </g>
+</svg>
+    
